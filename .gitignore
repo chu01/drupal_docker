@@ -1,0 +1,5 @@
+db-backups/*.mysql
+db-backups/*.sql
+db-backups/*.gz
+db-backups/*.xz
+db-backups/*.zip
