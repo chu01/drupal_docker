@@ -1,11 +1,11 @@
 version: '2'
 services:
   web:
-    image: 8.5-apache
+    image:  lullaboteducation/drupaldevwithdocker-php
     volumes:
       - ./docroot:/var/www/html:cached
     ports:
-      - "8282:80"
+      - "8181:80"
   db:
     image: lullaboteducation/drupaldevwithdocker-mysql
     volumes:
@@ -14,9 +14,9 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: drupaldb
       MYSQL_USER: drupal
-      MYSQL_PASSWORD: verybadpassword
+      MYSQL_PASSWORD: drupal
     ports:
-      - "3306:3306"
+      - "3307:3306"
   pma:
     image: phpmyadmin/phpmyadmin
     environment:
