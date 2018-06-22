@@ -3,13 +3,13 @@ services:
   web:
     image:  lullaboteducation/drupaldevwithdocker-php
     volumes:
-      - ./docroot:/var/www/html:cached
+      - ./docroot:/var/www/html
     ports:
       - "8181:80"
   db:
     image: lullaboteducation/drupaldevwithdocker-mysql
     volumes:
-      - ./db-backups:/var/mysql/backups:delegated
+      - ./db-backups:/var/mysql/backups
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: drupaldb
