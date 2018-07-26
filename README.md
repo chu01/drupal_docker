@@ -109,6 +109,29 @@ Open: http://localhost:HOST_APACHE_PORT (The port number you configured on .env 
 
 During installation on database configuratuion open the advanced setting to change the database host to MYSQL_NAME configured on .env file 
 
+### Optional: Import existing mysql Database dump
+
+Copy database dump to db-backups directory under the repo 
+
+```
+cp mysqlDump.sql /path/to/repo/db-backups
+```
+
+Now content under our db-backups direcory will be available under /var/mysql/backups on the container. 
+
+Login to our mysql container 
+
+```
+docker exec -it DbContainerName bash 
+```
+
+Import the database backup under /var/mysql/backups to the database we create
+
+```
+mysql -u username -p database_name < file.sql
+```
+
+Exit the container by typing 'exit'
 
 ## Authors
 
