@@ -3,4 +3,6 @@ db-backups/*.sql
 db-backups/*.gz
 db-backups/*.xz
 db-backups/*.zip
+db-data/*
 docroot/sites/default/files/*
+docroot/*

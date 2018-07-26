@@ -66,6 +66,17 @@ Drush is installed on the webserver container. In order run drush comman use:
 docker exec -it dsfintranet drush Command 
 ```
 
+### Drupal Project Installation 
+
+The next step is to get drupal project to be part of your repository. For fresh drupal installation please run the script provided. 
+
+```
+bash InstallDrupal.sh
+```
+Or 
+
+To dockerize an exixsting project please download the project to this directory and rename it to docroot. 
+
 ### Now go to the URL below to intall Drupal on your container
 
 From now on we use a normal Drupal Intallation, 
