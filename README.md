@@ -88,9 +88,18 @@ It is remmended to restart the web container after anychange to a volumen direct
 ```
 cd docroot/ && composer require 'drush/drush'
 ```
+### Vendor Directory 
+
+Vendor directory is ignored in our repository. So, please run composer install to get Drupal dependecies
+
+
+```
+cd docroot/ && composer install 
+```
 
 
 ### Now go to the URL below to intall Drupal on your container
+
 
 From now on we use a normal Drupal Intallation, 
 

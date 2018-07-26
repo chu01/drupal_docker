@@ -5,4 +5,4 @@ db-backups/*.xz
 db-backups/*.zip
 db-data/*
 docroot/sites/default/files/*
-
+docroot/vendor
