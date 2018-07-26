@@ -11,10 +11,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ```
-Git  [GitInstallation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-Docker [DockerInstallation](https://docs.docker.com/install/#reporting-security-issues)
-Composer [ComposerInstallation](https://getcomposer.org/doc/00-intro.md)
+Git  
+Docker 
+Composer 
 ```
+## Reference
+[GitInstallation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+[DockerInstallation](https://docs.docker.com/install/#reporting-security-issues)
+[ComposerInstallation](https://getcomposer.org/doc/00-intro.md)
 
 ### Installing
 
