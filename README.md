@@ -134,6 +134,6 @@ Exit the container by typing 'exit'
 
 ## Authors
 
-* **Hunde Keba** - *Initial work* - [Hundek](https://github.com/hunde)
+* **Hunde Keba** - *Drupal Docker* - [Hundek](https://github.com/hunde)
 
 
