@@ -55,16 +55,7 @@ RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0
 
 RUN apt-get update && apt-get install -y mysql-client && rm -rf /var/lib/apt
 
+RUN chown -R www-data:www-data /var/www/html
+
 WORKDIR /var/www/html
-#EXPOSE 80
 
-# https://www.drupal.org/node/3060/release
-ENV DRUPAL_VERSION 8.5.5
-ENV DRUPAL_MD5 4fee1348bbac85cae82d6634e7296b9f
-
-RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
-	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - \
-	&& tar -xz --strip-components=1 -f drupal.tar.gz \
-	&& rm drupal.tar.gz \
-	&& mv drupal docroot
-	&& chown -R www-data:www-data sites modules themes
