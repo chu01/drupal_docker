@@ -11,9 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ```
-Git  [How to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-Docker [How to install docker](https://docs.docker.com/install/#reporting-security-issues)
-Composer [How to install composer](https://getcomposer.org/doc/00-intro.md)
+Git  [GitInstallation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Docker [DockerInstallation](https://docs.docker.com/install/#reporting-security-issues)
+Composer [ComposerInstallation](https://getcomposer.org/doc/00-intro.md)
 ```
 
 ### Installing
