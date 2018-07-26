@@ -14,6 +14,7 @@ What things you need to install the software and how to install them
 ```
 Git 
 Docker 
+Composer
 ```
 
 ### Installing
@@ -63,19 +64,31 @@ $ docker-compose up --build -d
 Drush is installed on the webserver container. In order run drush comman use:
 
 ```
-docker exec -it dsfintranet drush Command 
+docker exec -it web drush Command 
 ```
 
 ### Drupal Project Installation 
 
-The next step is to get drupal project to be part of your repository. For fresh drupal installation please run the script provided. 
+The next step is to get drupal project to be part of your repository. For fresh drupal installation please run the script provided. This repo is being shipped with Drupal 8.5.5 under docroot directory. 
 
 ```
-bash InstallDrupal.sh
+bash InstallDrupal.sh //this will remove the existing Drupal installation and pull a new 8.5.5 release 
+#Please refer https://www.drupal.org/node/3060/release ton install diffrent version of drupal and change the 
+#URL on InstallDrupal.sh file to point to the version you want to install.
 ```
 Or 
 
 To dockerize an exixsting project please download the project to this directory and rename it to docroot. 
+It is remmended to restart the web container after anychange to a volumen directory. 
+
+❗During installation if an error "Can't unlink already-existing object" occured. Please try removing the docroot directory as a root user (sudo rm -rf docroot/) and rerun this script.  
+
+ ** Also if an existing Project is docorized please make sure drush is part of the project or run :
+
+```
+cd docroot/ && composer require 'drush/drush'
+```
+
 
 ### Now go to the URL below to intall Drupal on your container
 
